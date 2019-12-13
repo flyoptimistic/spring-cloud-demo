@@ -1,6 +1,7 @@
 package com.fly.feign;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 /**
  * @program: spring-cloud-demo
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @author: Mr.fly
  * @create: 2019-12-12 14:22
  **/
-@Component
+@Service("HelloRemoteHystrix")
 public class HelloRemoteHystrix implements HelloRemote {
 
     @Override

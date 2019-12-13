@@ -5,11 +5,16 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/flyoptimistic/spring-cloud-config.git # 配置git仓库的地址
+          uri: https://github.com/flyoptimistic/spring-cloud-demo # 配置git仓库的地址
           search-paths: config-repo # git仓库地址下的相对地址，可以配置多个，用,分割。
 #  profiles:
 #    active: native
 
 server:
   port: 12000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7000/eureka/
 
